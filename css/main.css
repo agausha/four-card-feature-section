@@ -23,11 +23,17 @@ body {
 
 .card__heading {
   text-align: center;
+  margin-bottom: 5rem;
+  font-size: 1.3rem;
 }
 
 .card__heading-text {
   width: 45%;
   margin-left: 30rem;
+}
+
+.card__detail {
+  text-align: center;
 }
 
 .main {
