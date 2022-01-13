@@ -26,9 +26,8 @@ body {
   font-size: 1.3rem;
 }
 
-.card__heading-text {
-  width: 45%;
-  margin-left: 30rem;
+.card__heading-title {
+  text-align: center;
 }
 
 .card__detail {
