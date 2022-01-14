@@ -1,0 +1,34 @@
+//COLORS PRIMARY
+$color-primary-Red: hsl(0, 78%, 62%);
+$color-primary-Cyan: hsl(180, 62%, 55%);
+$color-primary-Orange: hsl(34, 97%, 64%);
+$color-primary-Blue: hsl(212, 86%, 64%);
+
+//COLORS NEUTRAL
+$color-neutral-Very-Dark-Blue: hsl(234, 12%, 34%);
+$color-neutral-Grayish-Blue: hsl(229, 6%, 66%);
+$color-neutral-Very-Light-Gray: hsl(0, 0%, 98%);
+
+//FONT VARIABLES
+$font-primary: 'Poppins', sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  border: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 1.3;
+}
