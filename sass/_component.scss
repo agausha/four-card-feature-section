@@ -18,7 +18,7 @@
   }
 
   &__text {
-    font-size: 2rem;
+    font-size: 1.5rem;
     max-width: 50rem;
     margin: 0 auto;
     margin-top: 2rem;
@@ -73,7 +73,7 @@
   }
 
   &__text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: left;
   }
 
@@ -89,7 +89,7 @@
   .content {
     &__title,
     &__title-bold {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 }
@@ -101,7 +101,11 @@
 
   @media only screen and (max-width: 500px) {
     .cards .card {
-      padding: 2rem;
+      padding: 2.5rem;
+    }
+
+    &__title {
+      font-size: 1rem;
     }
   }
 }
