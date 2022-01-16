@@ -39,7 +39,7 @@ body {
 }
 
 .content__text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   max-width: 50rem;
   margin: 0 auto;
   margin-top: 2rem;
@@ -104,7 +104,7 @@ body {
 }
 
 .card__text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
 }
 
@@ -112,9 +112,9 @@ body {
   margin-top: 4rem;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 500px) {
   .content__title, .content__title-bold {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -125,7 +125,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) and (max-width: 425px) {
+@media only screen and (max-width: 768px) and (max-width: 500px) {
   .cards .card {
     padding: 2rem;
   }
