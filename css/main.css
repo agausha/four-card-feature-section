@@ -106,6 +106,7 @@ body {
 .card__text {
   font-size: 1.6rem;
   text-align: left;
+  font-weight: 200;
 }
 
 .card__icon {
@@ -133,7 +134,7 @@ body {
     font-size: 1.5rem;
   }
   __text {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
