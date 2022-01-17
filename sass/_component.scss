@@ -89,23 +89,27 @@
   .content {
     &__title,
     &__title-bold {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .cards {
     grid-template-columns: 1fr;
   }
 
   @media only screen and (max-width: 500px) {
     .cards .card {
-      padding: 2.5rem;
+      padding: 2rem;
     }
 
     &__title {
-      font-size: 1rem;
+      font-size: 1.5rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
     }
   }
 }
