@@ -53,7 +53,7 @@ body {
   gap: 3rem;
 }
 
-.cards-flex {
+.cards__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,18 +64,18 @@ body {
   gap: 3rem;
 }
 
-.card-1 {
+.cards .card-1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   border-top: 4px solid #45d3d3;
 }
 
-.card-2 {
+.cards .card-2 {
   border-top: 4px solid #ea5353;
 }
 
-.card {
+.cards .card {
   background: white;
   color: #a3a5ae;
   padding: 3rem;
@@ -85,32 +85,45 @@ body {
           box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3);
 }
 
-.card:nth-child(2) {
+.cards .card:nth-child(2) {
   border-top: 4px solid #fcaf4a;
 }
 
-.card:nth-child(3) {
+.cards .card:nth-child(3) {
   border-top: 4px solid #549ef2;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.card__title {
+.cards .card__title {
   font-size: 2rem;
   color: #4c4e61;
   margin-bottom: 2rem;
   text-align: left;
 }
 
-.card__text {
+.cards .card__text {
   font-size: 1.6rem;
   text-align: left;
   font-weight: 200;
 }
 
-.card__icon {
+.cards .card__icon {
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .cards .card {
+    padding: 2rem;
+  }
+  __title {
+    font-size: 1.5rem;
+  }
+  __text {
+    font-size: 0.6rem;
+    color: red;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -126,15 +139,16 @@ body {
   }
 }
 
-@media only screen and (max-width: 800px) and (max-width: 500px) {
-  .cards .card {
+@media only screen and (max-width: 500px) {
+  .card {
     padding: 2rem;
+    color: red;
   }
   __title {
     font-size: 1.5rem;
   }
   __text {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
 

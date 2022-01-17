@@ -33,55 +33,69 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-}
 
-.cards-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.card-1 {
-  align-self: center;
-  border-top: 4px solid $color-primary-Cyan;
-}
-
-.card-2 {
-  border-top: 4px solid $color-primary-Red;
-}
-
-.card {
-  background: $color-neutral-white;
-  color: $color-neutral-Grayish-Blue;
-  padding: 3rem;
-  border-radius: 8px;
-  text-align: right;
-  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3);
-
-  &:nth-child(2) {
-    border-top: 4px solid $color-primary-Orange;
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 
-  &:nth-child(3) {
-    border-top: 4px solid $color-primary-Blue;
+  .card-1 {
     align-self: center;
+    border-top: 4px solid $color-primary-Cyan;
+  }
+
+  .card-2 {
+    border-top: 4px solid $color-primary-Red;
+  }
+
+  .card {
+    background: $color-neutral-white;
+    color: $color-neutral-Grayish-Blue;
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: right;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.3);
+
+    &:nth-child(2) {
+      border-top: 4px solid $color-primary-Orange;
+    }
+
+    &:nth-child(3) {
+      border-top: 4px solid $color-primary-Blue;
+      align-self: center;
+    }
+
+    &__title {
+      font-size: 2rem;
+      color: $color-neutral-Very-Dark-Blue;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      text-align: left;
+      font-weight: 200;
+    }
+
+    &__icon {
+      margin-top: 4rem;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cards .card {
+    padding: 2rem;
   }
 
   &__title {
-    font-size: 2rem;
-    color: $color-neutral-Very-Dark-Blue;
-    margin-bottom: 2rem;
-    text-align: left;
+    font-size: 1.5rem;
   }
 
   &__text {
-    font-size: 1.6rem;
-    text-align: left;
-    font-weight: 200;
-  }
-
-  &__icon {
-    margin-top: 4rem;
+    font-size: 0.6rem;
+    color: red;
   }
 }
 
@@ -101,18 +115,19 @@
   .cards {
     grid-template-columns: 1fr;
   }
+}
 
-  @media only screen and (max-width: 500px) {
-    .cards .card {
-      padding: 2rem;
-    }
+@media only screen and (max-width: 500px) {
+  .card {
+    padding: 2rem;
+    color: red;
+  }
 
-    &__title {
-      font-size: 1.5rem;
-    }
+  &__title {
+    font-size: 1.5rem;
+  }
 
-    &__text {
-      font-size: 0.8rem;
-    }
+  &__text {
+    font-size: 0.5rem;
   }
 }
