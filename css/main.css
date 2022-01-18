@@ -152,7 +152,7 @@ body {
 
 @media only screen and (max-width: 500px) and (max-width: 390px) {
   .container .header__title, .container .header__title-bold {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
