@@ -35,8 +35,8 @@
   // CARDS SECTION
 
   .card {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     max-width: 1140px;
@@ -47,9 +47,9 @@
       color: $color-neutral-Grayish-Blue;
       margin: 1.5rem;
       padding: 3rem;
-      width: 30%;
-      border-radius: 8px;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      //       width: 30%;
+      //       border-radius: 8px;
+      //       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 
       &:nth-child(1) {
         border-top: 4px solid $color-primary-Cyan;
@@ -62,6 +62,7 @@
 
       &:nth-child(4) {
         border-top: 4px solid $color-primary-Orange;
+        grid-column: 2 /2;
       }
 
       &:nth-child(3) {
@@ -89,35 +90,49 @@
   }
 }
 
-//////////////////////////////////////////////
-//MEDIA QUERIES
+// //////////////////////////////////////////////
+// //MEDIA QUERIES
 
-//   @media only screen and (max-width: 500px) {
-//     .content {
-//       &__title,
-//       &__title-bold {
-//         font-size: 2rem;
-//       }
-//     }
-//   }
+// // @media only screen and (max-width: 960px) {
+// //   .container .card {
+// //     &__box {
+// //       max-width: 37%;
+// //       margin: 2rem auto;
+// //       &:nth-child(1) {
+// //         border-top: 4px solid $color-primary-Cyan;
+// //         transform: translateY(0);
+// //       }
 
-//   @media only screen and (max-width: 800px) {
-//     .cards {
-//       grid-template-columns: 1fr;
-//     }
-//   }
+// //       &:nth-child(3) {
+// //         border-top: 4px solid $color-primary-Blue;
+// //         transform: translateY(0);
+// //       }
+// //     }
+// //   }
+// // }
 
-//   @media only screen and (max-width: 500px) {
-//     .card {
-//       padding: 2rem;
+// // @media only screen and (max-width: 960px) {
+// //   .container .card {
+// //     flex-direction: column;
+// //   }
+// // }
+// //   @media only screen and (max-width: 800px) {
+// //     .cards {
+// //       grid-template-columns: 1fr;
+// //     }
+// //   }
 
-//       &__title {
-//         font-size: 1.5rem;
-//       }
+// //   @media only screen and (max-width: 500px) {
+// //     .card {
+// //       padding: 2rem;
 
-//       &__text {
-//         font-size: 0.5rem;
-//       }
-//     }
-//   }
-// }
+// //       &__title {
+// //         font-size: 1.5rem;
+// //       }
+
+// //       &__text {
+// //         font-size: 0.5rem;
+// //       }
+// //     }
+// //   }
+// // }
