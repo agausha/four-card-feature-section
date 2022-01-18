@@ -119,6 +119,53 @@ body {
   margin-left: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .container .card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container .card__box:nth-child(1) {
+    grid-column: 1 / -1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .container .card__box:nth-child(2) {
+    grid-column: 1 / -1;
+  }
+  .container .card__box:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+  .container .card__box:nth-child(3) {
+    grid-column: 1 / -1;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    grid-row: 4 / span 3;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container .header__title, .container .header__title-bold {
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (max-width: 500px) and (max-width: 390px) {
+  .container .header__title, .container .header__title-bold {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .container .card__text {
+    font-size: 1.3rem;
+  }
+}
+
 .main {
   padding: 5rem 3rem;
   max-width: 144rem;
