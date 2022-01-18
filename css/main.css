@@ -75,6 +75,9 @@ body {
   color: #a3a5ae;
   margin: 1.5rem;
   padding: 3rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .container .card__box:nth-child(1) {
