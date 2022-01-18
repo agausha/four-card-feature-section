@@ -1,6 +1,4 @@
 .container {
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
 
   ////////////////////////////////////////////
@@ -32,11 +30,12 @@
   }
 
   ////////////////////////////////////////////
-  // CARDS SECTION
+  // CARD SECTION
 
   .card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     justify-content: center;
     align-items: center;
     max-width: 1140px;
@@ -45,10 +44,10 @@
     &__box {
       background: $color-neutral-white;
       color: $color-neutral-Grayish-Blue;
-      margin: 1.5rem;
+      margin: 1rem 0.1rem;
       padding: 3rem;
       border-radius: 8px;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 
       &:nth-child(1) {
         border-top: 4px solid $color-primary-Cyan;
@@ -95,6 +94,7 @@
 @media only screen and (max-width: 768px) {
   .container .card {
     grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 }
 
@@ -135,14 +135,6 @@
       &__title-bold {
         font-size: 2.5rem;
       }
-    }
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .container .card {
-    &__text {
-      font-size: 1.3rem;
     }
   }
 }
